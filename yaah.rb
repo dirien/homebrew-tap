@@ -5,21 +5,21 @@
 class Yaah < Formula
   desc "Yet Another Agent Harness — Go toolkit for managing Claude Code configuration"
   homepage "https://github.com/dirien/yet-another-agent-harness"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.7/yet-another-agent-harness_darwin_amd64.tar.gz"
-      sha256 "0526e15c50a36b4f2f5f86409533a8d74dcb371cd5547c7b2e921b7329e1009e"
+      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.8/yet-another-agent-harness_darwin_amd64.tar.gz"
+      sha256 "4293fe433b5f90322863d1127c1900703a4b9490ee99f9076c10df0aef8172f6"
 
       define_method(:install) do
         bin.install "yaah"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.7/yet-another-agent-harness_darwin_arm64.tar.gz"
-      sha256 "dd4e76569c36ebf14f7166114768057a11f8674c8e444b5bdbb88e901a6a695a"
+      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.8/yet-another-agent-harness_darwin_arm64.tar.gz"
+      sha256 "90862bbe9698d7ea35bb70ff3c684d12d8b23432e51045c6786e43e0ce628228"
 
       define_method(:install) do
         bin.install "yaah"
@@ -29,15 +29,15 @@ class Yaah < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.7/yet-another-agent-harness_linux_amd64.tar.gz"
-      sha256 "ff7b1772f7537771b36650839f29d328b33a69ab09ee0bd3bc904309b256663d"
+      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.8/yet-another-agent-harness_linux_amd64.tar.gz"
+      sha256 "1ba0d2091ed5eddf606a3061c563f6aedf25aeba349a2e6f5599b45400d26aee"
       define_method(:install) do
         bin.install "yaah"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.7/yet-another-agent-harness_linux_arm64.tar.gz"
-      sha256 "135ad4d38eb1e3248ad27aaee6774cb7def569140353a43642bead1dba56a856"
+      url "https://github.com/dirien/yet-another-agent-harness/releases/download/v0.1.8/yet-another-agent-harness_linux_arm64.tar.gz"
+      sha256 "b5a830dff44b3426d537a30f8cd050f3cbc00e01812d8e7bba4c5b2f046b05b8"
       define_method(:install) do
         bin.install "yaah"
       end
